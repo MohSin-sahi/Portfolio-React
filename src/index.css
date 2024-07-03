@@ -15,7 +15,7 @@ body {
   line-height: 1.6;
 }
 .container {
-  max-width: 120rem;
+  max-width: 85rem;
   margin: 0 auto;
 }
 .header {
@@ -35,6 +35,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: #fff;
   /* box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2); */
 }
 .navbar .logo {
@@ -133,3 +134,123 @@ body {
   background-color: #53ed6a;
 }
 /* ///////////// Portfolio Section //////////// */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 6rem 0;
+}
+.portfolio .heading1 {
+  font-size: 6rem;
+  font-weight: 600;
+  text-align: center;
+}
+.portfolio .heading2 {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+}
+.slider_box {
+  width: 80rem;
+  height: 45rem;
+  position: relative;
+}
+.slider {
+  width: 80rem;
+  height: 45rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider .left_slide {
+  width: 3rem;
+  height: 5rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-0%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  color: #53ed6a;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.slider .right_slide {
+  width: 3rem;
+  height: 5rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-0%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  color: #53ed6a;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.slider .left_slide:hover,
+.slider .right_slide:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.slider > p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #53ed6a;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+}
+
+.circle_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.circle_div > span {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #000;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.active_circle {
+  background-color: #53ed6a;
+}
+
+.portfolio_text > p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.btns_div {
+  display: flex;
+  gap: 1.5rem;
+}
+.btn_portfolio {
+  padding: 1rem;
+  font-size: 1.4rem;
+  letter-spacing: 0;
+  font-weight: 500;
+  border: 2px solid #333;
+  text-transform: uppercase;
+}
