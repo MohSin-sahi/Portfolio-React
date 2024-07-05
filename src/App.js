@@ -1,14 +1,14 @@
-import React from "react";
-import Header from "./Header";
-import Portfolio from "./Portfolio";
+import "./App.css";
+import Header from "./Header.js";
+import Main from "./Main.js";
 
-const App = () => {
+function App() {
   return (
-    <div className="container">
-      <Header />;
-      <Portfolio />;
+    <div className="App">
+      <Header />
+      <Main />
     </div>
   );
-};
+}
 
 export default App;
