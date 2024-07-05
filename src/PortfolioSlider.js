@@ -34,10 +34,10 @@ const PortfolioSlider = () => {
     setStep(id);
   };
   const leftSlide = function () {
-    setStep((step) => (step === sliderData.length - 1 ? 0 : step + 1));
+    setStep((step) => (step === 0 ? sliderData.length - 1 : step - 1));
   };
   const rightSlide = function () {
-    setStep((step) => (step === 0 ? sliderData.length - 1 : step - 1));
+    setStep((step) => (step === sliderData.length - 1 ? 0 : step + 1));
   };
   return (
     <>
@@ -51,7 +51,7 @@ const PortfolioSlider = () => {
             <span className="right_slide" onClick={() => rightSlide()}>
               &gt;
             </span>
-            <p>{slideData.text}</p>
+            <p display={step === i ? "block" : "none"}>{slideData.text}</p>
           </div>
         ))}
       </div>
