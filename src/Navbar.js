@@ -16,8 +16,8 @@ const Navbar = () => {
       </a>
 
       <ul className="navbar_list">
-        {menu.map((item) => (
-          <li className="navbar_item">
+        {menu.map((item, i) => (
+          <li className="navbar_item" key={i}>
             <a href="www.google.com" className="navbar_link">
               {item}
             </a>

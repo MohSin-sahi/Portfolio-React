@@ -1,69 +1,63 @@
 import React, { useState } from "react";
 
-const PortfolioSlider = () => {
+const PortfolioSlider = ({ portfolioData }) => {
   const [step, setStep] = useState(0);
-  const sliderData = [
-    {
-      imgName: "Picture1",
-      img: "img/recipixslide1.jpg",
-      text: "Recipix is a mobile app that keep tracks of items in your fridge and recommends recipes based on those items.",
-    },
-    {
-      imgName: "Picture2",
-      img: "img/recipixslide2.png",
-      text: "Add items to your virtual fridge by scanning the barcode or by manual input (left). Optionally set an expiration date (center). All fridge items are shown in the Fridge tab (right).",
-    },
-    {
-      imgName: "Picture3",
-      img: "img/recipixslide3.png",
-      text: "Recipix recommends delicious recipes based on what's in your fridge(left). You can also filter recipes by ingredients (right).",
-    },
-    {
-      imgName: "Picture4",
-      img: "img/recipixslide4.png",
-      text: "Your user profile (center). You can set your dietary preferences (left) and allergies (right).",
-    },
-    {
-      imgName: "Picture5",
-      img: "img/recipixteam.jfif",
-      text: "Developers of Recipix (from left to right): Lily Moriarty, Luis Bello, Chris Chin (me), Don Ng",
-    },
-  ];
 
   const circleSlide = function (id) {
     setStep(id);
   };
   const leftSlide = function () {
-    setStep((step) => (step === 0 ? sliderData.length - 1 : step - 1));
+    setStep((step) => (step === 0 ? portfolioData.slide.length - 1 : step - 1));
   };
   const rightSlide = function () {
-    setStep((step) => (step === sliderData.length - 1 ? 0 : step + 1));
+    setStep((step) => (step === portfolioData.slide.length - 1 ? 0 : step + 1));
   };
   return (
     <>
+      <h2 className="heading2">{portfolioData.title}</h2>
+
       <div className="slider_box">
-        {sliderData.map((slideData, i) => (
-          <div className="slider">
-            <img src={slideData.img} alt={slideData.imgName} />
-            <span className="left_slide" onClick={() => leftSlide()}>
-              &lt;
-            </span>
-            <span className="right_slide" onClick={() => rightSlide()}>
-              &gt;
-            </span>
-            <p display={step === i ? "block" : "none"}>{slideData.text}</p>
-          </div>
-        ))}
+        {/* {portfolioData.slide.map((slideData, i) => ( */}
+        <div className="slider">
+          <img
+            src={portfolioData.slide[step].img}
+            alt={portfolioData.slide[step].imgName}
+          />
+          <span className="left_slide" onClick={() => leftSlide()}>
+            &lt;
+          </span>
+          <span className="right_slide" onClick={() => rightSlide()}>
+            &gt;
+          </span>
+          <p>{portfolioData.slide[step].text}</p>
+        </div>
+        {/* ))} */}
       </div>
       <div className="circle_div">
-        {sliderData.map((dot, i) => (
+        {portfolioData.slide.map((dot, i) => (
           <span
+            key={i}
             className={step === i ? "active_circle" : ""}
             onClick={() => circleSlide(i)}
           >
             &nbsp;
           </span>
         ))}
+      </div>
+      <div className="portfolio_text">
+        <p>{portfolioData.para1}</p>
+        <p> {portfolioData.para2}</p>
+        <div className="btns_div">
+          {portfolioData.buttons.map((button, i) => (
+            <button className="btn btn_portfolio" key={i}>
+              {button}
+              {/* <i class="fa-brands fa-github"></i>
+            <i class="fa-solid fa-up-right-from-square"></i>
+            <i class="fa-regular fa-circle-play"></i>
+            <FontAwesomeIcon icon="fa-solid fa-circle-play" /> */}
+            </button>
+          ))}
+        </div>
       </div>
     </>
   );
