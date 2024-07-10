@@ -142,10 +142,11 @@ body {
   gap: 3rem;
   margin: 6rem 0;
 }
-.portfolio .heading1 {
+.heading1 {
   font-size: 6rem;
   font-weight: 600;
   text-align: center;
+  text-transform: capitalize;
 }
 .portfolio .heading2 {
   font-size: 4rem;
@@ -253,4 +254,117 @@ body {
   font-weight: 500;
   border: 2px solid #333;
   text-transform: uppercase;
+}
+/* ///////////// About Section //////////// */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.about_box {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr 2fr;
+}
+.img_box {
+  width: 32rem;
+  height: 32rem;
+  border-top-left-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  overflow: hidden;
+  border: 5px solid #333;
+  background-color: #222;
+  transition: all 0.6s ease-out;
+}
+.img_box:hover {
+  background-color: #53ed6a;
+}
+.img_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about_para,
+.hobby_para {
+  font-size: 1.8rem;
+}
+.heading3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+.technology_section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.technology_box {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.technology {
+  border: 1px solid black;
+}
+.technology_title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 500;
+  background-color: #333;
+}
+.technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.techimg_box {
+  width: 5rem;
+  max-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.technologies img {
+  width: 100%;
+  max-height: auto;
+  object-fit: cover;
+}
+.technologies .toolTip {
+  font-size: 1.6rem;
+  background-color: #53ed6a;
+  padding: 0.5rem 0rem;
+  border-radius: 5px;
+  color: #333333;
+  text-align: center;
+  text-transform: capitalize;
+  position: absolute;
+  left: 50%;
+  visibility: hidden;
+  width: 12rem;
+  z-index: 1;
+  top: 100%;
+  opacity: 0;
+  transform: translate(-50%, 0);
+  transition: opacity 0.5s;
+}
+.technologies .toolTip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 5px solid;
+  border-color: transparent transparent #53ed6a transparent;
+}
+.techimg_box:hover .toolTip {
+  opacity: 1;
+  visibility: visible;
 }
