@@ -17,7 +17,9 @@ function Overview() {
         <div className="about_box">
           <div className="about_box1">
             <img src="frontend.png" alt="Frontend" />
-            <p>Frontend Developer</p>
+            <p>
+              Frontend <br /> Developer
+            </p>
           </div>
         </div>
       </div>

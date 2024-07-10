@@ -197,21 +197,36 @@ li {
   line-height: 1.8rem;
   color: rgb(153, 153, 161);
   width: 65%;
-  margin-bottom: 2rem;
 }
 
 .about_box {
+  margin-top: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .about_box1 {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   padding: 2rem 1rem;
-  border-radius: 1.5rem;
-  width: 24%;
-  height: auto;
+  border-radius: 25px;
+  width: 22%;
+  height: 18rem;
   background-color: #333;
-  /* color: #9898A0; */
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.about_box1 img {
+  width: 65px;
+  height: 65px;
+}
+
+.about_box1 p {
+  text-align: center;
+  color: #9898a0;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
