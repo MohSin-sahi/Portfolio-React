@@ -1,47 +1,47 @@
 import React from "react";
 
-const userProjects = [
-  {
-    photoName: "pro1.png",
-    logo: "pro_logo.png",
-    heading: "KOMIKULT",
-    para: "A comic characters list app that displays Marvel characters.",
-    btn_logo: "demo_logo.png",
-    btn: "Live Demo",
-  },
-  {
-    photoName: "pro2.png",
-    logo: "pro_logo.png",
-    heading: "LEADERBOARD",
-    para: "A leaderboard list app that displays scores submitted by different players.",
-    btn_logo: "demo_logo.png",
-    btn: "Live Demo",
-  },
-  {
-    photoName: "pro3.png",
-    logo: "pro_logo.png",
-    heading: "Math Magicians",
-    para: "This is a single-page calculator app built with React",
-    btn_logo: "demo_logo.png",
-    btn: "Live Demo",
-  },
-  {
-    photoName: "pro4.png",
-    logo: "pro_logo.png",
-    heading: "Movie Metro",
-    para: "A single-page application that allows users to search for any movie or show's ratings and its details.",
-    btn_logo: "demo_logo.png",
-    btn: "Live Demo",
-  },
-  {
-    photoName: "pro5.png",
-    logo: "pro_logo.png",
-    heading: "Nyeusi Fest Site",
-    para: "This is a demo concert website for a music festival called Nyeusi.",
-    btn_logo: "demo_logo.png",
-    btn: "Live Demo",
-  },
-];
+// const userProjects = [
+//   {
+//     photoName: "pro1.png",
+//     logo: "pro_logo.png",
+//     heading: "KOMIKULT",
+//     para: "A comic characters list app that displays Marvel characters.",
+//     btn_logo: "demo_logo.png",
+//     btn: "Live Demo",
+//   },
+//   {
+//     photoName: "pro2.png",
+//     logo: "pro_logo.png",
+//     heading: "LEADERBOARD",
+//     para: "A leaderboard list app that displays scores submitted by different players.",
+//     btn_logo: "demo_logo.png",
+//     btn: "Live Demo",
+//   },
+//   {
+//     photoName: "pro3.png",
+//     logo: "pro_logo.png",
+//     heading: "Math Magicians",
+//     para: "This is a single-page calculator app built with React",
+//     btn_logo: "demo_logo.png",
+//     btn: "Live Demo",
+//   },
+//   {
+//     photoName: "pro4.png",
+//     logo: "pro_logo.png",
+//     heading: "Movie Metro",
+//     para: "A single-page application that allows users to search for any movie or show's ratings and its details.",
+//     btn_logo: "demo_logo.png",
+//     btn: "Live Demo",
+//   },
+//   {
+//     photoName: "pro5.png",
+//     logo: "pro_logo.png",
+//     heading: "Nyeusi Fest Site",
+//     para: "This is a demo concert website for a music festival called Nyeusi.",
+//     btn_logo: "demo_logo.png",
+//     btn: "Live Demo",
+//   },
+// ];
 
 function Project() {
   return (
@@ -57,11 +57,29 @@ function Project() {
           oversee projects.
         </p>
         <div className="pro_m">
-          <div className="pro_1"></div>
-          <div className="pro_2"></div>
-          <div className="pro_1"></div>
-          <div className="pro_1"></div>
-          <div className="pro_1"></div>
+          <div className="pro_card">
+            <img src="pro1.png" alt="Project One" className="pro_img" />
+            <div className="whEffect"></div>
+          </div>
+          <div className="pro_card w_30">
+            <img src="pro2.png" alt="Project Two" className="pro_img" />
+            <div className="whEffect"></div>
+            <div className="pro_detail">
+              <img src="pro_logo.png" alt="Logo" className="log" />
+            </div>
+          </div>
+          <div className="pro_card">
+            <img src="pro3.png" alt="Project Three" className="pro_img" />
+            <div className="whEffect"></div>
+          </div>
+          <div className="pro_card">
+            <img src="pro4.png" alt="Project Four" className="pro_img" />
+            <div className="whEffect"></div>
+          </div>
+          <div className="pro_card">
+            <img src="pro5.png" alt="Project Five" className="pro_img" />
+            <div className="whEffect"></div>
+          </div>
         </div>
       </div>
     </div>
