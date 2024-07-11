@@ -1,5 +1,27 @@
 import React from "react";
 
+const userTech = [
+  {
+    photoName: "frontend.png",
+    nameOne: "Frontend",
+    nameTwo: "Developer",
+  },
+  {
+    photoName: "backend.png",
+    nameOne: "Backend",
+    nameTwo: "Developer",
+  },
+  {
+    photoName: "UI.png",
+    nameOne: "UI/UX Design",
+  },
+  {
+    photoName: "prototype.png",
+    nameOne: "Software",
+    nameTwo: "Prototyping",
+  },
+];
+
 function Overview() {
   return (
     <div className="about">
@@ -15,14 +37,22 @@ function Overview() {
           veniam dolorum ipsum doloribus.
         </p>
         <div className="about_box">
-          <div className="about_box1">
-            <img src="frontend.png" alt="Frontend" />
-            <p>
-              Frontend <br /> Developer
-            </p>
-          </div>
+          {userTech.map((tech) => (
+            <Box techObj={tech} key={tech.name} />
+          ))}
         </div>
       </div>
+    </div>
+  );
+}
+
+function Box(props) {
+  return (
+    <div className="about_box1">
+      <img src={props.techObj.photoName} alt={props.techObj.nameOne} />
+      <p>
+        {props.techObj.nameOne} <br /> {props.techObj.nameTwo}
+      </p>
     </div>
   );
 }

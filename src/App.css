@@ -196,7 +196,7 @@ li {
   font-weight: 500;
   line-height: 1.8rem;
   color: rgb(153, 153, 161);
-  width: 65%;
+  width: 68%;
 }
 
 .about_box {
@@ -213,7 +213,7 @@ li {
   align-items: center;
   padding: 2rem 1rem;
   border-radius: 25px;
-  width: 22%;
+  width: 21%;
   height: 18rem;
   background-color: #333;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -229,4 +229,44 @@ li {
   color: #9898a0;
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+/* Projects */
+
+.pro {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  background-color: #141414;
+}
+
+.pro_s {
+  margin: 8rem 6rem;
+}
+
+.intro_2 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #d4d4d8;
+}
+
+.pro_m {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.pro_1 {
+  width: 15%;
+  height: 25rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.pro_2 {
+  width: 30%;
+  height: 25rem;
+  background-color: white;
+  border-radius: 1rem;
 }
