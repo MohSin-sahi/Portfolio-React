@@ -1,11 +1,28 @@
 import React from "react";
 
+const hobbyImage = [
+  { imgName: "logo1", imgPath: "img/hobby/game.png" },
+  { imgName: "logo2", imgPath: "img/hobby/travel.png" },
+  { imgName: "logo3", imgPath: "img/hobby/swim.png" },
+  { imgName: "logo4", imgPath: "img/hobby/jog.png" },
+  { imgName: "logo5", imgPath: "img/hobby/tv.png" },
+  { imgName: "logo6", imgPath: "img/hobby/hp.png" },
+  { imgName: "logo7", imgPath: "img/hobby/noodles.png" },
+  { imgName: "logo8", imgPath: "img/hobby/sushi.png" },
+];
+
 const Hobby = () => {
   return (
     <div className="hobby_section">
       <h3 className="heading3">Hobbies & Interests</h3>
-      <div>
-        <div></div>
+      <div className="hobby_box">
+        <div className="hobby_img-container">
+          {hobbyImage.map((img, i) => (
+            <div className="hobby_img-box" key={i}>
+              <img src={img.imgPath} alt={img.imgName} />
+            </div>
+          ))}
+        </div>
         <p className="hobby_para">
           Besides my passion for coding, I love to play video games,
           specifically RPGs and MMORPGs. I also love to travel, swim, and jog.

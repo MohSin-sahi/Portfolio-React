@@ -254,12 +254,20 @@ body {
   font-weight: 500;
   border: 2px solid #333;
   text-transform: uppercase;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.btn_portfolio img {
+  width: 2rem;
+  height: 2rem;
 }
 /* ///////////// About Section //////////// */
 .about {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  margin-bottom: 6rem;
 }
 .about_box {
   display: grid;
@@ -367,4 +375,154 @@ body {
 .techimg_box:hover .toolTip {
   opacity: 1;
   visibility: visible;
+}
+
+.hobby_section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hobby_box {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.hobby_img-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem;
+  gap: 1.5rem;
+}
+.hobby_img-box {
+  width: 6rem;
+  max-height: 6rem;
+}
+.hobby_img-box img {
+  width: 100%;
+  max-height: auto;
+  object-fit: cover;
+}
+/* ///////////// Resume Section //////////// */
+.resume_section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+.resume_btns {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.resume_btn {
+  padding: 1rem;
+  border: 2px solid #333;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.resume_btn img {
+  width: 2rem;
+  height: 2rem;
+}
+/* ///////////// Contact Section //////////// */
+.contact_section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-bottom: 6rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  width: 30rem;
+  margin: 0 auto;
+}
+.form_group {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+.inHover {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  border: none;
+  outline: none;
+  resize: none;
+}
+.form_group .borBot {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+.form_group:hover .borBotHov {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+}
+.form_group label {
+  font-size: 1.6rem;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  color: #969696;
+}
+.form_btn {
+  padding: 1rem;
+  border: 2px solid #333;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.form_btn img {
+  width: 2rem;
+  height: 2rem;
+}
+/* ///////////// Footer Section //////////// */
+.footer_section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+  width: 30rem;
+}
+.footerLogoBox {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: space-evenly;
+}
+.footerLogo {
+  width: 3rem;
+  height: 3rem;
+}
+.footerLogo img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.footerLogoBox img:hover {
+  transform: scale(1.5);
+}
+.footerText {
+  font-size: 1.6rem;
+  text-align: center;
 }

@@ -11,7 +11,7 @@ const Technolgy = () => {
             <p className="technology_title">{data.heading}</p>
             <div className="technologies">
               {data.TechData.map((techPic, i) => (
-                <div className=" techimg_box">
+                <div className=" techimg_box" key={i}>
                   <img src={techPic.imgpath} alt={techPic.title} />
                   <span className="toolTip">{techPic.title}</span>
                 </div>

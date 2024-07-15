@@ -32,7 +32,11 @@ export const portfolioData = [
       "Recipix is a cross-platform mobile application that allows a user to virtually keep track of items in their fridge. Users may add items from their fridge via barcode scanning, and the app generates a list of recipes they can create based on those ingredients. Users may filter recipes based on specific ingredients. Recommended recipes show step-by-step instructions as well as any missing ingredients. This app was created in 2.5 weeks in an agile team of 4 for a capstone project.",
     para2:
       "Technologies: JavaScript, React Native, Redux, Expo, Sequelize, PostgreSQL, Node.js, Express, Edamam API, Spoonacular API",
-    buttons: ["try demo", "view code", "watch presentation"],
+    buttons: [
+      { btnText: "try demo", btnImg: "img/footer/externallink2.png" },
+      { btnText: "view code", btnImg: "img/footer/github3.png" },
+      { btnText: "watch presentation", btnImg: "img/footer/video.png" },
+    ],
   },
   {
     title: "Race Hopper",
@@ -61,7 +65,10 @@ export const portfolioData = [
     para1:
       "Race Hopper is a 3D platform video game built with the WebGL API designed to be played in the web browser. Players must hop over obstacles to advance to the next level. Jewels may be collected to obtain a better score. This game was created solo in 2 days for a hack-a-thon.",
     para2: "Technologies: C#, Unity, WebGL",
-    buttons: ["try demo", "view code"],
+    buttons: [
+      { btnText: "try demo", btnImg: "img/footer/externallink2.png" },
+      { btnText: "view code", btnImg: "img/footer/github3.png" },
+    ],
   },
   {
     title: "Bot-Buddies",
@@ -86,7 +93,10 @@ export const portfolioData = [
       "Bot-Buddies is a mock e-commerce website for consumers to purchase robots. Looking for a friend? Or a chef? Perhaps feeling lonely in the love department? We’ve got you covered! The site features cart functionality, guest and user checkout, and order history. This website was created in 1 week in an agile team of 4.",
     para2:
       "Technologies: JavaScript, React, Redux, Node.js, Express, Sequelize, PostgreSQL, Semantic UI React",
-    buttons: ["try demo", "view code"],
+    buttons: [
+      { btnText: "try demo", btnImg: "img/footer/externallink2.png" },
+      { btnText: "view code", btnImg: "img/footer/github3.png" },
+    ],
   },
 ];
 

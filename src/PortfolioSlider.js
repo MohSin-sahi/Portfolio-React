@@ -50,11 +50,8 @@ const PortfolioSlider = ({ portfolioData }) => {
         <div className="btns_div">
           {portfolioData.buttons.map((button, i) => (
             <button className="btn btn_portfolio" key={i}>
-              {button}
-              {/* <i class="fa-brands fa-github"></i>
-            <i class="fa-solid fa-up-right-from-square"></i>
-            <i class="fa-regular fa-circle-play"></i>
-            <FontAwesomeIcon icon="fa-solid fa-circle-play" /> */}
+              <span>{button.btnText}</span>
+              <img src={button.btnImg} alt={button.btnText} />
             </button>
           ))}
         </div>
