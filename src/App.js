@@ -8,14 +8,16 @@ import Footer from "./Footer";
 
 const App = () => {
   return (
-    <div className="container">
+    <>
       <Header />;
-      <Portfolio />;
-      <About />
-      <Resume />
-      <Contact />
-      <Footer />
-    </div>
+      <div className="container">
+        <Portfolio />;
+        <About />
+        <Resume />
+        <Contact />
+        <Footer />
+      </div>
+    </>
   );
 };
 

@@ -7,7 +7,7 @@ const HeadingCenter = () => {
         <p>Hello! My name is</p>
         <p>Chris Chin.</p>
         <p>I'm a software engineer.</p>
-        <button className="btn">view portfolio</button>
+        <button className="btn mt">view portfolio</button>
       </div>
     </div>
   );

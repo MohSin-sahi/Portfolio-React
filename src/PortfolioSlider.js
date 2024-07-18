@@ -13,7 +13,7 @@ const PortfolioSlider = ({ portfolioData }) => {
     setStep((step) => (step === portfolioData.slide.length - 1 ? 0 : step + 1));
   };
   return (
-    <>
+    <div className="portfolio">
       <h2 className="heading2">{portfolioData.title}</h2>
 
       <div className="slider_box">
@@ -56,7 +56,7 @@ const PortfolioSlider = ({ portfolioData }) => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
