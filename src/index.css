@@ -16,6 +16,8 @@ body {
   font-family: "Lato", sans-serif;
   line-height: 1.6;
   color: #333;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .container {
   max-width: 100rem;
@@ -38,7 +40,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   background-color: #fff;
   z-index: 100;
 }
@@ -72,6 +74,11 @@ body {
   display: flex;
   gap: 2.5rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .navbar .navbar_list {
+    gap: 1.5rem;
+  }
+}
 .navbar .navbar_item {
   font-size: 1.4rem;
   font-weight: 600;
@@ -99,7 +106,7 @@ body {
   left: 0;
 }
 
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 37.5em) {
   .navbar input,
   .navbar .hamburger {
     display: block;
@@ -109,7 +116,7 @@ body {
     width: 30px;
     height: 24px;
     position: absolute;
-    right: 30px;
+    right: 15px;
     z-index: 2000;
     opacity: 0;
     cursor: pointer;
@@ -119,7 +126,7 @@ body {
     width: 30px;
     height: 24px;
     position: absolute;
-    right: 30px;
+    right: 15px;
     z-index: 1500;
     border-radius: 10px;
     display: flex;
@@ -143,7 +150,7 @@ body {
     background-color: #fff;
     box-shadow: 0rem 0.2rem 1.3rem rgba(#000, 0.7);
     width: 45%;
-    border-left: 1px solid #000;
+    border-left: 1px solid #000000;
     z-index: 1000;
     text-align: center;
     opacity: 0;
@@ -207,11 +214,17 @@ body {
   font-weight: 600;
   color: #333;
 }
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 56.25em) {
   .head_center p:nth-child(odd) {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .head_center p:nth-child(odd) {
+    font-size: 2rem;
+  }
+}
+
 .head_center p:nth-child(even) {
   font-size: 10rem;
   font-weight: 600;
@@ -219,9 +232,14 @@ body {
   margin-top: -2.5rem;
   margin-bottom: -2.5rem;
 }
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 56.25em) {
   .head_center p:nth-child(even) {
-    font-size: 5rem;
+    font-size: 7rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .head_center p:nth-child(even) {
+    font-size: 3.5rem;
   }
 }
 .mt {
@@ -242,7 +260,12 @@ body {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 56.25em) {
+  .btn {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
   .btn {
     font-size: 1.6rem;
   }
@@ -258,7 +281,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 4rem;
-  width: 80rem;
   margin: 6rem auto;
 }
 .portfolio {
@@ -274,6 +296,7 @@ body {
   text-align: center;
   text-transform: capitalize;
 }
+
 .portfolio .heading2 {
   font-size: 4rem;
   font-weight: 600;
@@ -284,6 +307,7 @@ body {
   height: 45rem;
   position: relative;
 }
+
 .slider {
   width: 80rem;
   height: 45rem;
@@ -367,6 +391,7 @@ body {
 
 .portfolio_text {
   padding: 0 2rem;
+  width: 80rem;
 }
 .portfolio_text > p {
   font-size: 2rem;
@@ -375,6 +400,7 @@ body {
 }
 .btns_div {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 .btn_portfolio {
@@ -392,19 +418,60 @@ body {
   width: 2rem;
   height: 2rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .slider_box {
+    width: 100%;
+    height: 56vw;
+  }
+  .slider {
+    width: 100%;
+    height: 56vw;
+  }
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
+  }
+  .portfolio_text {
+    padding: 0 2rem;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .slider_box {
+    width: 100%;
+    height: 100vw;
+  }
+  .slider {
+    width: 100%;
+    height: 100vw;
+  }
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
+  }
+  .portfolio_text {
+    padding: 0 2rem;
+    width: 100%;
+  }
+  .btn_portfolio {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
 /* ///////////// About Section //////////// */
 .about {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 6rem;
-
   margin-bottom: 6rem;
+  padding: 0 2rem;
 }
 .about_box {
-  width: 90rem;
   display: grid;
-  margin: 0 auto;
-  gap: 6rem;
+  gap: 10rem;
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr 2fr;
@@ -429,7 +496,7 @@ body {
 }
 .about_para,
 .hobby_para {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .heading3 {
   font-size: 2.5rem;
@@ -442,11 +509,14 @@ body {
   gap: 2rem;
 }
 .technology_box {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 .technology {
+  width: 32rem;
   border: 1px solid black;
 }
 .technology_title {
@@ -468,7 +538,7 @@ body {
   align-items: center;
 }
 .techimg_box {
-  width: 5rem;
+  width: 6rem;
   max-height: 5rem;
   display: flex;
   justify-content: center;
@@ -536,6 +606,39 @@ body {
   width: 100%;
   max-height: auto;
   object-fit: cover;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .about {
+    gap: 4rem;
+    margin-bottom: 4rem;
+    align-items: center;
+    padding: 0 4rem;
+  }
+  .about_box {
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .technology_section {
+    align-items: center;
+  }
+  .technology_box {
+    grid-template-columns: 1fr;
+  }
+  .technology {
+    width: 30rem;
+  }
+  .hobby_box {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  @media only screen and (max-width: 37.5em) {
+    .heading3 {
+      font-size: 2rem;
+    }
+  }
 }
 /* ///////////// Resume Section //////////// */
 .resume_section {
@@ -645,13 +748,12 @@ body {
 .footer_section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
-  margin: 0 auto;
-  width: 30rem;
 }
 .footerLogoBox {
   display: flex;
-  gap: 2.5rem;
+  gap: 5rem;
   justify-content: space-evenly;
 }
 .footerLogo {

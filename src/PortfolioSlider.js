@@ -17,7 +17,6 @@ const PortfolioSlider = ({ portfolioData }) => {
       <h2 className="heading2">{portfolioData.title}</h2>
 
       <div className="slider_box">
-        {/* {portfolioData.slide.map((slideData, i) => ( */}
         <div className="slider">
           <img
             src={portfolioData.slide[step].img}
@@ -31,7 +30,6 @@ const PortfolioSlider = ({ portfolioData }) => {
           </span>
           <p>{portfolioData.slide[step].text}</p>
         </div>
-        {/* ))} */}
       </div>
       <div className="circle_div">
         {portfolioData.slide.map((dot, i) => (

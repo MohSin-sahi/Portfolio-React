@@ -4,7 +4,7 @@ import { portfolioData } from "./data";
 
 const Portfolio = () => {
   return (
-    <section className="portfolio_section">
+    <section className="portfolio_section" id="portfolio">
       <h1 className="heading1">Portfolio</h1>
       {portfolioData.map((portfolioData, i) => (
         <PortfolioSlider portfolioData={portfolioData} key={i} />

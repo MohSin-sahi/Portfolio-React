@@ -1,9 +1,21 @@
 import React from "react";
 
 const footLogo = [
-  { logoName: "email", logoImg: "img/footer/email.png" },
-  { logoName: "linkedin", logoImg: "img/footer/linkedin.png" },
-  { logoName: "github", logoImg: "img/footer/github3.png" },
+  {
+    logoName: "email",
+    logoImg: "img/footer/email.png",
+    link: "https://mail.google.com/",
+  },
+  {
+    logoName: "linkedin",
+    logoImg: "img/footer/linkedin.png",
+    link: "https://pk.linkedin.com/",
+  },
+  {
+    logoName: "github",
+    logoImg: "img/footer/github3.png",
+    link: "https://github.com/",
+  },
 ];
 const Footer = () => {
   return (
@@ -11,7 +23,9 @@ const Footer = () => {
       <div className="footerLogoBox">
         {footLogo.map((logo, i) => (
           <div className="footerLogo" key={i}>
-            <img src={logo.logoImg} alt={logo.logoName} />
+            <a href={logo.link}>
+              <img src={logo.logoImg} alt={logo.logoName} />
+            </a>
           </div>
         ))}
       </div>

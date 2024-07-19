@@ -4,7 +4,7 @@ import HeadingCenter from "./HeadingCenter";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header" id="head">
       <Navbar />
       <HeadingCenter />
     </header>

@@ -2,16 +2,16 @@ import React from "react";
 
 const Navbar = () => {
   const menu = [
-    "portfolio",
-    "about",
-    "resume",
-    "contact",
-    "github",
-    "linkedin",
+    { text: "portfolio", link: "#portfolio" },
+    { text: "about", link: "#about" },
+    { text: "resume", link: "#resume" },
+    { text: "contact", link: "#contact" },
+    { text: "github", link: "https://github.com/" },
+    { text: "linkedin", link: "https://pk.linkedin.com/" },
   ];
   return (
     <nav className="navbar">
-      <a href="www.google.com" className="logo">
+      <a href="#head" className="logo">
         c
       </a>
 
@@ -24,8 +24,8 @@ const Navbar = () => {
       <ul className="navbar_list">
         {menu.map((item, i) => (
           <li className="navbar_item" key={i}>
-            <a href="www.google.com" className="navbar_link">
-              {item}
+            <a href={item.link} className="navbar_link">
+              {item.text}
             </a>
           </li>
         ))}

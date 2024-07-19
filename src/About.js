@@ -4,7 +4,7 @@ import Hobby from "./Hobby";
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <h1 className="heading1">About me</h1>
       <div className="about_box">
         <div className="img_box">

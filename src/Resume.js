@@ -2,7 +2,7 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <section className="resume_section">
+    <section className="resume_section" id="resume">
       <h1 className="heading1">Resume</h1>
       <div className="resume_btns">
         <button className="btn resume_btn">
