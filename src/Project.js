@@ -60,25 +60,40 @@ function Project() {
           <div className="pro_card">
             <img src="pro1.png" alt="Project One" className="pro_img" />
             <div className="whEffect"></div>
+            <p className="pro_name">Komikult</p>
           </div>
           <div className="pro_card w_30">
             <img src="pro2.png" alt="Project Two" className="pro_img" />
             <div className="whEffect"></div>
             <div className="pro_detail">
-              <img src="pro_logo.png" alt="Logo" className="log" />
+              <a href="#">
+                <img src="pro_logo.png" alt="Logo" className="log" />
+              </a>
+              <h1 className="box_heading">leaderboard</h1>
+              <p className="box_des">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum
+              </p>
+              <a href="#" className="live_btn">
+                <img src="demo_logo.png" alt="Demo Logo" className="demo_img" />
+                LIVE DEMO
+              </a>
             </div>
           </div>
           <div className="pro_card">
             <img src="pro3.png" alt="Project Three" className="pro_img" />
             <div className="whEffect"></div>
+            <p className="pro_name">Math Magicians</p>
           </div>
           <div className="pro_card">
             <img src="pro4.png" alt="Project Four" className="pro_img" />
             <div className="whEffect"></div>
+            <p className="pro_name">Movie Metro</p>
           </div>
           <div className="pro_card">
             <img src="pro5.png" alt="Project Five" className="pro_img" />
             <div className="whEffect"></div>
+            <p className="pro_name">Nyeusi Fest Site</p>
           </div>
         </div>
       </div>
