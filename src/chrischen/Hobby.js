@@ -1,14 +1,14 @@
 import React from "react";
 
 const hobbyImage = [
-  { imgName: "logo1", imgPath: "img/hobby/game.png" },
-  { imgName: "logo2", imgPath: "img/hobby/travel.png" },
-  { imgName: "logo3", imgPath: "img/hobby/swim.png" },
-  { imgName: "logo4", imgPath: "img/hobby/jog.png" },
-  { imgName: "logo5", imgPath: "img/hobby/tv.png" },
-  { imgName: "logo6", imgPath: "img/hobby/hp.png" },
-  { imgName: "logo7", imgPath: "img/hobby/noodles.png" },
-  { imgName: "logo8", imgPath: "img/hobby/sushi.png" },
+  { imgName: "logo1", imgPath: "img/chrischen/hobby/game.png" },
+  { imgName: "logo2", imgPath: "img/chrischen/hobby/travel.png" },
+  { imgName: "logo3", imgPath: "img/chrischen/hobby/swim.png" },
+  { imgName: "logo4", imgPath: "img/chrischen/hobby/jog.png" },
+  { imgName: "logo5", imgPath: "img/chrischen/hobby/tv.png" },
+  { imgName: "logo6", imgPath: "img/chrischen/hobby/hp.png" },
+  { imgName: "logo7", imgPath: "img/chrischen/hobby/noodles.png" },
+  { imgName: "logo8", imgPath: "img/chrischen/hobby/sushi.png" },
 ];
 
 const Hobby = () => {

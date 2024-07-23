@@ -8,7 +8,7 @@ const About = () => {
       <h1 className="heading1">About me</h1>
       <div className="about_box">
         <div className="img_box">
-          <img src="img/portfolionobg.png" alt="profile" />
+          <img src="img/chrischen/portfolionobg.png" alt="profile" />
         </div>
         <p className="about_para">
           Hi! I’m Chris Chin, a full-stack web developer and software engineer

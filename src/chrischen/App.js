@@ -5,6 +5,7 @@ import About from "./About";
 import Resume from "./Resume";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import "./index.css";
 
 const App = () => {
   return (

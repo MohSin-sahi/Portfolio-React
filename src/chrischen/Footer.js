@@ -3,17 +3,17 @@ import React from "react";
 const footLogo = [
   {
     logoName: "email",
-    logoImg: "img/footer/email.png",
+    logoImg: "img/chrischen/footer/email.png",
     link: "https://mail.google.com/",
   },
   {
     logoName: "linkedin",
-    logoImg: "img/footer/linkedin.png",
+    logoImg: "img/chrischen/footer/linkedin.png",
     link: "https://pk.linkedin.com/",
   },
   {
     logoName: "github",
-    logoImg: "img/footer/github3.png",
+    logoImg: "img/chrischen/footer/github3.png",
     link: "https://github.com/",
   },
 ];

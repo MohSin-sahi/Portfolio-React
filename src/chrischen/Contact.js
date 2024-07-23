@@ -41,7 +41,7 @@ const Contact = () => {
         <div>
           <button className="btn form_btn">
             <span>send message</span>
-            <img src="img/footer/paper-plane.png" alt="plane" />
+            <img src="img/chrischen/footer/paper-plane.png" alt="plane" />
           </button>
         </div>
       </form>
