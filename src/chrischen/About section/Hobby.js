@@ -14,12 +14,33 @@ const hobbyImage = [
 const Hobby = () => {
   return (
     <div className="hobby_section">
-      <h3 className="heading3">Hobbies & Interests</h3>
-      <div className="hobby_box">
+      <h3
+        className="heading3"
+        data-aos="fade-up"
+        data-aos-delay="150"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        Hobbies & Interests
+      </h3>
+      <div
+        className="hobby_box"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <div className="hobby_img-container">
           {hobbyImage.map((img, i) => (
             <div className="hobby_img-box" key={i}>
-              <img src={img.imgPath} alt={img.imgName} />
+              <img
+                src={img.imgPath}
+                alt={img.imgName}
+                data-aos="flip-left"
+                data-aos-delay={`${i * 100}`}
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              />
             </div>
           ))}
         </div>

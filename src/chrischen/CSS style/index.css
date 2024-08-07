@@ -10,13 +10,13 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   font-weight: 400;
   font-family: "Lato", sans-serif;
   line-height: 1.6;
   color: #333;
-  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 .container {
@@ -247,6 +247,7 @@ body {
 }
 .btn {
   background-color: #fff;
+  text-decoration: none;
   outline: none;
   padding: 1.5rem;
   font-size: 2rem;
@@ -273,6 +274,7 @@ body {
 .btn:hover {
   background-color: #53ed6a;
 }
+
 /* ///////////// Portfolio Section //////////// */
 
 .portfolio_section {
@@ -281,7 +283,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 4rem;
-  margin: 6rem auto;
+  padding: 6rem 0;
+  transition: all 0.3s ease-in-out;
 }
 .portfolio {
   display: flex;
@@ -466,8 +469,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 6rem;
-  margin-bottom: 6rem;
-  padding: 0 2rem;
+  padding: 6rem 2rem 0rem 2rem;
 }
 .about_box {
   display: grid;
@@ -645,7 +647,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-bottom: 6rem;
+  padding-top: 6rem;
 }
 .resume_btns {
   display: flex;
@@ -670,6 +672,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  padding-top: 6rem;
   margin-bottom: 6rem;
 }
 .form {

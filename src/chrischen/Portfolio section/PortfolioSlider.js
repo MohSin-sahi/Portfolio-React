@@ -13,7 +13,13 @@ const PortfolioSlider = ({ portfolioData }) => {
     setStep((step) => (step === portfolioData.slide.length - 1 ? 0 : step + 1));
   };
   return (
-    <div className="portfolio">
+    <div
+      className="portfolio"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
       <h2 className="heading2">{portfolioData.title}</h2>
 
       <div className="slider_box">

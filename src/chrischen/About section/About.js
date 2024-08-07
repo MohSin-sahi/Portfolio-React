@@ -5,8 +5,14 @@ import Hobby from "./Hobby";
 const About = () => {
   return (
     <section className="about" id="about">
-      <h1 className="heading1">About me</h1>
-      <div className="about_box">
+      <h1 className="heading1"  data-aos="fade-up"
+          data-aos-delay="150"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out">About me</h1>
+      <div className="about_box"  data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
         <div className="img_box">
           <img src="img/chrischen/portfolionobg.png" alt="profile" />
         </div>

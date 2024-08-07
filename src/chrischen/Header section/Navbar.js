@@ -16,10 +16,10 @@ const Navbar = () => {
       </a>
 
       <input type="checkbox" />
-      <div class="hamburger">
-        <span class="lines line1"></span>
-        <span class="lines line2"></span>
-        <span class="lines line3"></span>
+      <div className="hamburger">
+        <span className="lines line1"></span>
+        <span className="lines line2"></span>
+        <span className="lines line3"></span>
       </div>
       <ul className="navbar_list">
         {menu.map((item, i) => (

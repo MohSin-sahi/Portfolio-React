@@ -2,9 +2,23 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="contact_section" id="contact">
-      <h1 className="heading1">Contact</h1>
-      <form className="form">
+    <section className="contact_section section" id="contact">
+      <h1
+        className="heading1"
+        data-aos="fade-up"
+        data-aos-delay="150"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        Contact
+      </h1>
+      <form
+        className="form"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <div className="form_group">
           <input
             type="text"
