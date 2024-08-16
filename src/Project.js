@@ -1,47 +1,42 @@
 import React from "react";
 
-// const userProjects = [
-//   {
-//     photoName: "pro1.png",
-//     logo: "pro_logo.png",
-//     heading: "KOMIKULT",
-//     para: "A comic characters list app that displays Marvel characters.",
-//     btn_logo: "demo_logo.png",
-//     btn: "Live Demo",
-//   },
-//   {
-//     photoName: "pro2.png",
-//     logo: "pro_logo.png",
-//     heading: "LEADERBOARD",
-//     para: "A leaderboard list app that displays scores submitted by different players.",
-//     btn_logo: "demo_logo.png",
-//     btn: "Live Demo",
-//   },
-//   {
-//     photoName: "pro3.png",
-//     logo: "pro_logo.png",
-//     heading: "Math Magicians",
-//     para: "This is a single-page calculator app built with React",
-//     btn_logo: "demo_logo.png",
-//     btn: "Live Demo",
-//   },
-//   {
-//     photoName: "pro4.png",
-//     logo: "pro_logo.png",
-//     heading: "Movie Metro",
-//     para: "A single-page application that allows users to search for any movie or show's ratings and its details.",
-//     btn_logo: "demo_logo.png",
-//     btn: "Live Demo",
-//   },
-//   {
-//     photoName: "pro5.png",
-//     logo: "pro_logo.png",
-//     heading: "Nyeusi Fest Site",
-//     para: "This is a demo concert website for a music festival called Nyeusi.",
-//     btn_logo: "demo_logo.png",
-//     btn: "Live Demo",
-//   },
-// ];
+const userProjects = [
+  {
+    photoName: "pro1.png",
+    logo: "pro_logo.png",
+    heading: "KOMIKULT",
+    para: "A comic characters list app that displays Marvel characters.",
+    btn_logo: "demo_logo.png",
+  },
+  {
+    photoName: "pro2.png",
+    logo: "pro_logo.png",
+    heading: "LEADERBOARD",
+    para: "A leaderboard list app that displays scores submitted by different players.",
+    btn_logo: "demo_logo.png",
+  },
+  {
+    photoName: "pro3.png",
+    logo: "pro_logo.png",
+    heading: "Math Magicians",
+    para: "This is a single-page calculator app built with React",
+    btn_logo: "demo_logo.png",
+  },
+  {
+    photoName: "pro4.png",
+    logo: "pro_logo.png",
+    heading: "Movie Metro",
+    para: "A single-page application that allows users to search for any movie or show's ratings and its details.",
+    btn_logo: "demo_logo.png",
+  },
+  {
+    photoName: "pro5.png",
+    logo: "pro_logo.png",
+    heading: "Nyeusi Fest Site",
+    para: "This is a demo concert website for a music festival called Nyeusi.",
+    btn_logo: "demo_logo.png",
+  },
+];
 
 function Project() {
   return (
@@ -57,16 +52,15 @@ function Project() {
           oversee projects.
         </p>
         <div className="pro_m">
-          <div className="pro_card">
+          {userProjects.map((pro, i) => (
+            <Projects proObj={pro} key={i} />
+          ))}
+          {/* <div className="pro_card" id="cardOpen1">
             <img src="pro1.png" alt="Project One" className="pro_img" />
             <div className="whEffect"></div>
             <p className="pro_name">Komikult</p>
-          </div>
-          <div className="pro_card w_30">
-            <img src="pro2.png" alt="Project Two" className="pro_img" />
-            <div className="whEffect"></div>
-            <div className="pro_detail">
-              <a href="#">
+            <div className="pro_detail proHidden">
+              <a href="www.youtube.com">
                 <img src="pro_logo.png" alt="Logo" className="log" />
               </a>
               <h1 className="box_heading">leaderboard</h1>
@@ -74,42 +68,120 @@ function Project() {
                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
                 Lorem Ipsum Lorem Ipsum
               </p>
-              <a href="#" className="live_btn">
+              <a href="www.youtube.com" className="live_btn">
                 <img src="demo_logo.png" alt="Demo Logo" className="demo_img" />
                 LIVE DEMO
               </a>
             </div>
           </div>
-          <div className="pro_card">
+          <div className="pro_card w_30" id="cardOpen2">
+            <img src="pro2.png" alt="Project Two" className="pro_img" />
+            <div className="whEffect"></div>
+            <div className="pro_detail">
+              <a href="www.youtube.com">
+                <img src="pro_logo.png" alt="Logo" className="log" />
+              </a>
+              <h1 className="box_heading">leaderboard</h1>
+              <p className="box_des">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum
+              </p>
+              <a href="www.youtube.com" className="live_btn">
+                <img src="demo_logo.png" alt="Demo Logo" className="demo_img" />
+                LIVE DEMO
+              </a>
+            </div>
+          </div>
+          <div className="pro_card" id="cardOpen3">
             <img src="pro3.png" alt="Project Three" className="pro_img" />
             <div className="whEffect"></div>
             <p className="pro_name">Math Magicians</p>
+            <div className="pro_detail proHidden">
+              <a href="www.youtube.com">
+                <img src="pro_logo.png" alt="Logo" className="log" />
+              </a>
+              <h1 className="box_heading">leaderboard</h1>
+              <p className="box_des">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum
+              </p>
+              <a href="www.youtube.com" className="live_btn">
+                <img src="demo_logo.png" alt="Demo Logo" className="demo_img" />
+                LIVE DEMO
+              </a>
+            </div>
           </div>
-          <div className="pro_card">
+          <div className="pro_card" id="cardOpen4">
             <img src="pro4.png" alt="Project Four" className="pro_img" />
             <div className="whEffect"></div>
             <p className="pro_name">Movie Metro</p>
+            <div className="pro_detail proHidden">
+              <a href="www.youtube.com">
+                <img src="pro_logo.png" alt="Logo" className="log" />
+              </a>
+              <h1 className="box_heading">leaderboard</h1>
+              <p className="box_des">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum
+              </p>
+              <a href="www.youtube.com" className="live_btn">
+                <img src="demo_logo.png" alt="Demo Logo" className="demo_img" />
+                LIVE DEMO
+              </a>
+            </div>
           </div>
-          <div className="pro_card">
+          <div className="pro_card" id="cardOpen5">
             <img src="pro5.png" alt="Project Five" className="pro_img" />
             <div className="whEffect"></div>
             <p className="pro_name">Nyeusi Fest Site</p>
-          </div>
+            <div className="pro_detail proHidden">
+              <a href="www.youtube.com">
+                <img src="pro_logo.png" alt="Logo" className="log" />
+              </a>
+              <h1 className="box_heading">leaderboard</h1>
+              <p className="box_des">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum
+              </p>
+              <a href="www.youtube.com" className="live_btn">
+                <img src="demo_logo.png" alt="Demo Logo" className="demo_img" />
+                LIVE DEMO
+              </a>
+            </div>
+          </div> */}
         </div>
       </div>
     </div>
   );
 }
 
-// function Box(props) {
-//   return (
-//     <div className="about_box1">
-//       <img src={props.techObj.photoName} alt={props.techObj.nameOne} />
-//       <p>
-//         {props.techObj.nameOne} <br /> {props.techObj.nameTwo}
-//       </p>
-//     </div>
-//   );
-// }
+function Projects(props) {
+  return (
+    <div className="pro_card" id="cardOpen">
+      <img
+        src={props.proObj.photoName}
+        alt={props.proObj.heading}
+        className="pro_img"
+      />
+      <div className="whEffect"></div>
+      <p className="pro_name">{props.proObj.heading}</p>
+      <div className="pro_detail proHidden">
+        <a href="www.youtube.com">
+          <img src={props.proObj.logo} alt="Logo" className="log" />
+        </a>
+        <h1 className="box_heading">{props.proObj.heading}</h1>
+        <p className="box_des">{props.proObj.para}</p>
+        <a href="www.youtube.com" className="live_btn">
+          <img
+            src={props.proObj.btn_logo}
+            alt="Demo Logo"
+            className="demo_img"
+          />
+          LIVE DEMO
+        </a>
+      </div>
+    </div>
+  );
+}
 
 export default Project;

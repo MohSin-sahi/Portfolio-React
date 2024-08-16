@@ -37,8 +37,8 @@ function Overview() {
           veniam dolorum ipsum doloribus.
         </p>
         <div className="about_box">
-          {userTech.map((tech) => (
-            <Box techObj={tech} key={tech.name} />
+          {userTech.map((tech, i) => (
+            <Box techObj={tech} key={i} />
           ))}
         </div>
       </div>

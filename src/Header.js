@@ -9,8 +9,8 @@ function Header() {
         <img src="logo-text.png" alt="name" className="logo2" />
       </div>
       <ul className="d_flex nav_list">
-        {menu.map((item) => (
-          <li>
+        {menu.map((item, i) => (
+          <li key={i}>
             <a href="www.youtube.com">{item}</a>
           </li>
         ))}
